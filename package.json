@@ -1,0 +1,27 @@
+{
+  "name": "dereferrer",
+  "version": "1.0.0",
+  "description": "Get info about referrer page",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape -r ./test | ./node_modules/.bin/tap-diff",
+    "doc": "./node_modules/.bin/jsdoc -d reports/jsdoc -c tools/jsdoc.json --readme README.md -r index.js && (./node_modules/.bin/opener ./reports/jsdoc/index.html &)",
+    "checkCoverage": "./node_modules/.bin/istanbul cover --dir reports/coverage ./node_modules/.bin/tape -- -r ./test > /dev/null && (./node_modules/.bin/opener ./reports/coverage/lcov-report/index.html &)"
+  },
+  "author": "Marcin Konicki <ahwayakchih@neoni.net>",
+  "license": "ISC",
+  "devDependencies": {
+    "docdash": "^0.1.0",
+    "eslint": "^2.7.0",
+    "istanbul": "^0.4.2",
+    "jsdoc": "git+https://github.com/jsdoc3/jsdoc.git",
+    "opener": "^1.4.1",
+    "tap-diff": "^0.1.1",
+    "tape": "^4.5.1",
+    "tape-catch": "^1.0.4"
+  },
+  "dependencies": {
+    "ipware": "0.0.8",
+    "needle": "^1.0.0"
+  }
+}
