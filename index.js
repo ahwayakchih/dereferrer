@@ -99,7 +99,7 @@ module.exports.getReferrerHTML = function getReferrerHTML (req, referrerURL, cal
 			return callback(err);
 		}
 
-		callback(null, res.body, referrer);
+		callback(null, res.body, referrer, res.headers);
 	});
 };
 
