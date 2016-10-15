@@ -12,16 +12,16 @@
   "license": "ISC",
   "devDependencies": {
     "docdash": "^0.4.0",
-    "eslint": "^3.4.0",
+    "eslint": "^3.8.0",
     "istanbul": "^0.4.5",
     "jsdoc": "git+https://github.com/jsdoc3/jsdoc.git",
-    "opener": "^1.4.1",
+    "opener": "^1.4.2",
     "tap-diff": "^0.1.1",
-    "tape": "^4.6.0",
+    "tape": "^4.6.2",
     "tape-catch": "^1.0.6"
   },
   "dependencies": {
-    "ipware": "0.0.8",
-    "needle": "^1.1.0"
+    "ipware": "^1.0.0",
+    "needle": "^1.1.2"
   }
 }
