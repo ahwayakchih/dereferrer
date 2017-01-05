@@ -8,20 +8,28 @@
     "doc": "./node_modules/.bin/jsdoc -d reports/jsdoc -c tools/jsdoc.json --readme README.md -r index.js && (./node_modules/.bin/opener ./reports/jsdoc/index.html &)",
     "checkCoverage": "./node_modules/.bin/istanbul cover --dir reports/coverage ./node_modules/.bin/tape -- -r ./test > /dev/null && (./node_modules/.bin/opener ./reports/coverage/lcov-report/index.html &)"
   },
-  "author": "Marcin Konicki <ahwayakchih@neoni.net>",
-  "license": "ISC",
   "devDependencies": {
     "docdash": "^0.4.0",
-    "eslint": "^3.8.0",
+    "eslint": "^3.12.2",
     "istanbul": "^0.4.5",
     "jsdoc": "git+https://github.com/jsdoc3/jsdoc.git",
     "opener": "^1.4.2",
     "tap-diff": "^0.1.1",
-    "tape": "^4.6.2",
+    "tape": "^4.6.3",
     "tape-catch": "^1.0.6"
   },
   "dependencies": {
     "ipware": "^1.0.0",
-    "needle": "^1.1.2"
+    "needle": "^1.4.3"
+  },
+  "homepage": "https://github.com/ahwayakchih/dereferrer",
+  "author": "Marcin Konicki <ahwayakchih@neoni.net>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahwayakchih/dereferrer/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ahwayakchih/dereferrer.git"
   }
 }
